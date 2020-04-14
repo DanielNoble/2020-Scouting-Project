@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".RecordEndGame"
+    tools:showIn="@layout/activity_record_end_game">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="End Game"
+        android:textAlignment="center"
+        android:textColor="@color/primaryGreen"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Parked"
+                    android:textColor="@color/primaryGreen" />
+
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Climbed"
+                    android:textColor="@color/primaryGreen" />
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Helped Climbed"
+                    android:textColor="@color/primaryGreen" />
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Balanced"
+                    android:textColor="@color/primaryGreen" />
+
+                <CheckBox
+                    android:id="@+id/Defended"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Defended"
+                    android:textColor="@color/primaryGreen" />
+
+                <EditText
+                    android:id="@+id/addtionalComments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Any Additional Comments?"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/primaryGreen" />
+
+                <Button
+                    android:id="@+id/advertise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Blue"
+                    android:backgroundTint="@color/primaryGreen"
+                    android:elevation="@dimen/app_bar_height"
+                    android:text="Advertise"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/QR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/primaryGreen"
+                    android:text="QR"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/ic_launcher_background" />
+
+                <Button
+                    android:id="@+id/Exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Red"
+                    android:backgroundTint="#00DB1414"
+                    android:backgroundTintMode="screen"
+                    android:elevation="@dimen/app_bar_height"
+                    android:text="Exit"
+                    android:textAllCaps="true"
+                    android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
