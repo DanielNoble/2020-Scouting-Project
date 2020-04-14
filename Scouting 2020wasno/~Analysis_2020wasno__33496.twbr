@@ -1,0 +1,1031 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20191.19.1210.1649                               -->
+<workbook source-build='2019.1.11 (20191.19.1210.1649)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='scouting_data' inline='true' name='federated.0car3ym1f9wa1l17fyi4d00cyfeo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='scouting_data' name='textscan.01zgmev0d2rol614dpkrn1marx06'>
+            <connection class='textscan' directory='C:/Users/labib/Desktop/Scouting 2020wasno' filename='scouting_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.01zgmev0d2rol614dpkrn1marx06' name='scouting_data.csv' table='[scouting_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='matchNumber' ordinal='0' />
+            <column datatype='integer' name='teamNumber' ordinal='1' />
+            <column datatype='string' name='startPosition' ordinal='2' />
+            <column datatype='boolean' name='preLoadedBalls' ordinal='3' />
+            <column datatype='integer' name='auto-bottom port' ordinal='4' />
+            <column datatype='integer' name='auto-Outer port' ordinal='5' />
+            <column datatype='boolean' name='crossedLine' ordinal='6' />
+            <column datatype='integer' name='cellsCollected' ordinal='7' />
+            <column datatype='integer' name='Bottom Port' ordinal='8' />
+            <column datatype='integer' name='Top Port' ordinal='9' />
+            <column datatype='integer' name='missed' ordinal='10' />
+            <column datatype='integer' name='rotation' ordinal='11' />
+            <column datatype='boolean' name='colorControl' ordinal='12' />
+            <column datatype='boolean' name='balanced' ordinal='13' />
+            <column datatype='boolean' name='parked' ordinal='14' />
+            <column datatype='boolean' name='climbed' ordinal='15' />
+            <column datatype='boolean' name='helped' ordinal='16' />
+            <column datatype='boolean' name='defended' ordinal='17' />
+            <column datatype='string' name='additionalComments' ordinal='18' />
+            <column datatype='string' name='F20' ordinal='19' />
+          </columns>
+        </relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>matchNumber</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[matchNumber]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>matchNumber</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>teamNumber</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[teamNumber]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>teamNumber</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>startPosition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[startPosition]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>startPosition</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>preLoadedBalls</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[preLoadedBalls]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>preLoadedBalls</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>auto-bottom port</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[auto-bottom port]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>auto-bottom port</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>auto-Outer port</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[auto-Outer port]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>auto-Outer port</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crossedLine</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[crossedLine]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>crossedLine</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cellsCollected</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cellsCollected]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>cellsCollected</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bottom Port</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bottom Port]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>Bottom Port</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Top Port</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Top Port]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>Top Port</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>missed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[missed]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>missed</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rotation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rotation]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>rotation</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>colorControl</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[colorControl]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>colorControl</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>balanced</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[balanced]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>balanced</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>parked</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[parked]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>parked</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>climbed</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[climbed]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>climbed</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>helped</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[helped]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>helped</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>defended</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[defended]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>defended</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>additionalComments</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[additionalComments]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>additionalComments</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F20</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F20]</local-name>
+            <parent-name>[scouting_data.csv]</parent-name>
+            <remote-alias>F20</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Bottom Port]' role='measure' type='quantitative' />
+      <column caption='Climb FOM' datatype='integer' name='[Calculation_6092244420006846464]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='Case [climbed]&#13;&#10;When true then 1&#13;&#10;When false then 0&#13;&#10;end' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Top Port]' role='measure' type='quantitative' />
+      <column caption='Additional Comments' datatype='string' name='[additionalComments]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[auto-Outer port]' role='measure' type='quantitative' />
+      <column caption='Auto-Bottom Port' datatype='integer' name='[auto-bottom port]' role='measure' type='quantitative' />
+      <column caption='Balanced' datatype='boolean' name='[balanced]' role='dimension' type='nominal' />
+      <column caption='Cells Collected' datatype='integer' name='[cellsCollected]' role='measure' type='quantitative' />
+      <column caption='Climbed' datatype='boolean' name='[climbed]' role='dimension' type='nominal' />
+      <column caption='Color Control' datatype='boolean' name='[colorControl]' role='dimension' type='nominal' />
+      <column caption='Crossed Line' datatype='boolean' name='[crossedLine]' role='dimension' type='nominal' />
+      <column caption='Defended' datatype='boolean' name='[defended]' role='dimension' type='nominal' />
+      <column caption='Helped' datatype='boolean' name='[helped]' role='dimension' type='nominal' />
+      <column caption='Match Number' datatype='integer' name='[matchNumber]' role='dimension' type='ordinal' />
+      <column caption='Missed' datatype='integer' name='[missed]' role='measure' type='quantitative' />
+      <column caption='Parked' datatype='boolean' name='[parked]' role='dimension' type='nominal' />
+      <column caption='Pre Loaded Balls' datatype='boolean' name='[preLoadedBalls]' role='dimension' type='nominal' />
+      <column caption='Rotation' datatype='integer' name='[rotation]' role='measure' type='quantitative' />
+      <column caption='Start Position' datatype='string' name='[startPosition]' role='dimension' type='nominal' />
+      <column caption='Team Number' datatype='integer' name='[teamNumber]' role='dimension' type='ordinal' />
+      <column-instance column='[Bottom Port]' derivation='Sum' name='[sum:Bottom Port:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Top Port]' derivation='Sum' name='[sum:Top Port:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[auto-Outer port]' derivation='Sum' name='[sum:auto-Outer port:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[auto-bottom port]' derivation='Sum' name='[sum:auto-bottom port:qk]' pivot='key' type='quantitative' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/labib/Desktop/Scouting 2020wasno/scouting_data.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/01/2020 06:40:00 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='scouting_data' increment-value='%null%' refresh-type='create' rows-inserted='343' timestamp-start='2020-03-01 06:40:00.944' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>matchNumber</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[matchNumber]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>matchNumber</remote-alias>
+              <ordinal>0</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>teamNumber</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[teamNumber]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>teamNumber</remote-alias>
+              <ordinal>1</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>startPosition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[startPosition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>startPosition</remote-alias>
+              <ordinal>2</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>preLoadedBalls</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[preLoadedBalls]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>preLoadedBalls</remote-alias>
+              <ordinal>3</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>auto-bottom port</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[auto-bottom port]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>auto-bottom port</remote-alias>
+              <ordinal>4</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>auto-Outer port</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[auto-Outer port]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>auto-Outer port</remote-alias>
+              <ordinal>5</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>crossedLine</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[crossedLine]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>crossedLine</remote-alias>
+              <ordinal>6</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cellsCollected</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cellsCollected]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cellsCollected</remote-alias>
+              <ordinal>7</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bottom Port</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Bottom Port]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bottom Port</remote-alias>
+              <ordinal>8</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Top Port</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Top Port]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Top Port</remote-alias>
+              <ordinal>9</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>missed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[missed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>missed</remote-alias>
+              <ordinal>10</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rotation</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[rotation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rotation</remote-alias>
+              <ordinal>11</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>colorControl</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[colorControl]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>colorControl</remote-alias>
+              <ordinal>12</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>balanced</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[balanced]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>balanced</remote-alias>
+              <ordinal>13</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>parked</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[parked]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>parked</remote-alias>
+              <ordinal>14</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>climbed</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[climbed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>climbed</remote-alias>
+              <ordinal>15</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>helped</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[helped]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>helped</remote-alias>
+              <ordinal>16</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>defended</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[defended]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>defended</remote-alias>
+              <ordinal>17</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>additionalComments</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[additionalComments]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>additionalComments</remote-alias>
+              <ordinal>18</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F20</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F20]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F20</remote-alias>
+              <ordinal>19</ordinal>
+              <family>scouting_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.554156' measure-ordering='alphabetic' measure-percentage='0.445844' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[sum:auto-bottom port:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[sum:Bottom Port:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[sum:auto-Outer port:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[sum:Top Port:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Auto Balls'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='scouting_data' name='federated.0car3ym1f9wa1l17fyi4d00cyfeo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0car3ym1f9wa1l17fyi4d00cyfeo'>
+            <column datatype='integer' name='[auto-Outer port]' role='measure' type='quantitative' />
+            <column caption='Auto-Bottom Port' datatype='integer' name='[auto-bottom port]' role='measure' type='quantitative' />
+            <column-instance column='[teamNumber]' derivation='None' name='[none:teamNumber:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[auto-Outer port]' derivation='Sum' name='[sum:auto-Outer port:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[auto-bottom port]' derivation='Sum' name='[sum:auto-bottom port:qk]' pivot='key' type='quantitative' />
+            <column caption='Team Number' datatype='integer' name='[teamNumber]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[sum:auto-bottom port:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[sum:auto-Outer port:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[none:teamNumber:ok]' direction='ASC'>
+            <dictionary>
+              <bucket>4911</bucket>
+              <bucket>2910</bucket>
+              <bucket>3826</bucket>
+              <bucket>2976</bucket>
+              <bucket>4089</bucket>
+              <bucket>1778</bucket>
+              <bucket>2928</bucket>
+              <bucket>3070</bucket>
+              <bucket>4512</bucket>
+              <bucket>4681</bucket>
+              <bucket>492</bucket>
+              <bucket>2930</bucket>
+              <bucket>949</bucket>
+              <bucket>4513</bucket>
+              <bucket>4918</bucket>
+              <bucket>4205</bucket>
+              <bucket>4131</bucket>
+              <bucket>7461</bucket>
+              <bucket>2522</bucket>
+              <bucket>5588</bucket>
+              <bucket>1318</bucket>
+              <bucket>4915</bucket>
+              <bucket>1899</bucket>
+              <bucket>1294</bucket>
+              <bucket>2412</bucket>
+              <bucket>4683</bucket>
+              <bucket>4180</bucket>
+              <bucket>4682</bucket>
+              <bucket>4309</bucket>
+              <bucket>2903</bucket>
+              <bucket>3268</bucket>
+              <bucket>4173</bucket>
+              <bucket>7118</bucket>
+              <bucket>7627</bucket>
+              <bucket>8032</bucket>
+              <bucket>8059</bucket>
+              <bucket>8248</bucket>
+              <bucket>4861</bucket>
+              <bucket>%null%</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[Multiple Values]</rows>
+        <cols>[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[none:teamNumber:ok]</cols>
+      </table>
+      <simple-id uuid='{46BEB9AC-7A25-472B-884D-BF39F1AB463F}' />
+    </worksheet>
+    <worksheet name='Climb'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='scouting_data' name='federated.0car3ym1f9wa1l17fyi4d00cyfeo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0car3ym1f9wa1l17fyi4d00cyfeo'>
+            <column caption='Climb FOM' datatype='integer' name='[Calculation_6092244420006846464]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='Case [climbed]&#13;&#10;When true then 1&#13;&#10;When false then 0&#13;&#10;end' />
+            </column>
+            <column caption='Climbed' datatype='boolean' name='[climbed]' role='dimension' type='nominal' />
+            <column-instance column='[teamNumber]' derivation='None' name='[none:teamNumber:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_6092244420006846464]' derivation='Sum' name='[sum:Calculation_6092244420006846464:qk]' pivot='key' type='quantitative' />
+            <column caption='Team Number' datatype='integer' name='[teamNumber]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[none:teamNumber:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[sum:Calculation_6092244420006846464:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[sum:Calculation_6092244420006846464:qk]</rows>
+        <cols>[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[none:teamNumber:ok]</cols>
+      </table>
+      <simple-id uuid='{A2047AA7-8FB7-4B77-BA6C-1DA49583983F}' />
+    </worksheet>
+    <worksheet name='Count Match'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='scouting_data' name='federated.0car3ym1f9wa1l17fyi4d00cyfeo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0car3ym1f9wa1l17fyi4d00cyfeo'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Match Number' datatype='integer' name='[matchNumber]' role='dimension' type='ordinal' />
+            <column-instance column='[matchNumber]' derivation='None' name='[none:matchNumber:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[sum:Number of Records:qk]</rows>
+        <cols>[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[none:matchNumber:ok]</cols>
+      </table>
+      <simple-id uuid='{67C8B4B5-D5FD-4B99-9DE4-EB55AB310AFD}' />
+    </worksheet>
+    <worksheet name='Count Team'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='scouting_data' name='federated.0car3ym1f9wa1l17fyi4d00cyfeo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0car3ym1f9wa1l17fyi4d00cyfeo'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[teamNumber]' derivation='None' name='[none:teamNumber:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column caption='Team Number' datatype='integer' name='[teamNumber]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[sum:Number of Records:qk]</rows>
+        <cols>[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[none:teamNumber:ok]</cols>
+      </table>
+      <simple-id uuid='{E3E98F62-72CD-4004-A775-B4A108099455}' />
+    </worksheet>
+    <worksheet name='Teleop Balls'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='scouting_data' name='federated.0car3ym1f9wa1l17fyi4d00cyfeo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0car3ym1f9wa1l17fyi4d00cyfeo'>
+            <column datatype='integer' name='[Bottom Port]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Top Port]' role='measure' type='quantitative' />
+            <column-instance column='[teamNumber]' derivation='None' name='[none:teamNumber:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Bottom Port]' derivation='Sum' name='[sum:Bottom Port:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Top Port]' derivation='Sum' name='[sum:Top Port:qk]' pivot='key' type='quantitative' />
+            <column caption='Team Number' datatype='integer' name='[teamNumber]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[sum:Bottom Port:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[sum:Top Port:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[none:teamNumber:ok]' direction='ASC'>
+            <dictionary>
+              <bucket>2910</bucket>
+              <bucket>4911</bucket>
+              <bucket>3826</bucket>
+              <bucket>2976</bucket>
+              <bucket>4309</bucket>
+              <bucket>4513</bucket>
+              <bucket>2930</bucket>
+              <bucket>4512</bucket>
+              <bucket>1778</bucket>
+              <bucket>4089</bucket>
+              <bucket>492</bucket>
+              <bucket>949</bucket>
+              <bucket>2522</bucket>
+              <bucket>1318</bucket>
+              <bucket>1899</bucket>
+              <bucket>7461</bucket>
+              <bucket>5588</bucket>
+              <bucket>4683</bucket>
+              <bucket>8032</bucket>
+              <bucket>4681</bucket>
+              <bucket>2928</bucket>
+              <bucket>7627</bucket>
+              <bucket>1294</bucket>
+              <bucket>2412</bucket>
+              <bucket>4205</bucket>
+              <bucket>4131</bucket>
+              <bucket>4918</bucket>
+              <bucket>7118</bucket>
+              <bucket>3070</bucket>
+              <bucket>8248</bucket>
+              <bucket>4180</bucket>
+              <bucket>4915</bucket>
+              <bucket>3268</bucket>
+              <bucket>4173</bucket>
+              <bucket>8059</bucket>
+              <bucket>4682</bucket>
+              <bucket>2903</bucket>
+              <bucket>4861</bucket>
+              <bucket>%null%</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[Multiple Values]' field-type='quantitative' max='164.6282685052185' range-type='fixedmax' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#c290b4' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[Multiple Values]</rows>
+        <cols>[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[none:teamNumber:ok]</cols>
+      </table>
+      <simple-id uuid='{0398595F-BF9B-45ED-8805-88C1BAB6AD18}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Count Match'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D05C9526-D2DC-41AF-A204-9E91EDE780E7}' />
+    </window>
+    <window class='worksheet' name='Count Team'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E2B06218-42A2-419A-9C39-86389F4C6C9E}' />
+    </window>
+    <window class='worksheet' name='Teleop Balls'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{090787A4-B0A0-49D5-B48A-C517F58A073F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Auto Balls'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0car3ym1f9wa1l17fyi4d00cyfeo].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FA6B3C1F-7D86-47A6-A529-4FD889E00A15}' />
+    </window>
+    <window class='worksheet' name='Climb'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6A2B0D38-520D-4E2B-A6CA-49F08AA6F27C}' />
+    </window>
+  </windows>
+</workbook>
